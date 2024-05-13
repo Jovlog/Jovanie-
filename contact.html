@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+body {
+    background-image: url('adventure_background.jpg');
+    background-size: cover;
+    margin: 0;
+    font-family: 'Arial Black', Arial, sans-serif;
+    background-color: rgb(172, 149, 149);
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.topnav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.topnav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.topnav a.active {
+    background-color: black;
+}
+
+.contact-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: black;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #007B55;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #555;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #04AA6D;
+}
+
+footer {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 0px 0px;
+        text-align: center;
+        position: static;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+}
+.adventure-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adventure-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a class="active" href="Nadado final website.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="more.html">More</a>
+        <a href="sample video.html">Video</a>
+</div>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 style="color: #04AA6D;">Get in Touch</h2>
+        <p style="color: #555; font-size: 18px; margin-bottom: 30px;">Got questions or adventure stories to share? Reach out to us!</p>
+        <form action="send_message.php" method="post" class="contact-form" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="more-item">
+            <h3>Connect with Us</h3>
+            <p>Follow us on social media for daily inspiration, adventure tips, and updates on the latest outdoor trends.</p>
+            <h1>
+                <a href="https://jovanienadado.carrd.co/">My Contact</a>
+            </h1>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <button class="adventure-button" onclick="explore()">Pasasalamat!!</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 JoVlog. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+function explore() {
+    alert("Thank you for visiting my website! Its time for you to try my adventurous event.");
+}
+</script>
+
+</body>
+</html>
+
+

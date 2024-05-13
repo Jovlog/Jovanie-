@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-image: url('adventure_background.jpg');
+    background-size: cover;
+    margin: 0;
+    font-family: 'Arial Black', Arial, sans-serif;
+    background-color: rgb(172, 149, 149);
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.topnav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.topnav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.topnav a.active {
+    background-color: black;
+}
+
+.about-section {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    color: #333;
+}
+
+.about-text {
+    flex: 0 0 100%;
+}
+
+.about-images {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about-images img {
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-images img:hover {
+    transform: scale(1.1);
+}
+
+.about-images h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.about-images a {
+    text-decoration: none;
+    color: pink;
+}
+
+.adventure-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adventure-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 8px 0px;
+    text-align: center;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="more.html">More</a>
+    <a href="sample video.html">Video</a>
+</div>
+
+<center>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+</center>
+<div class="container about-section">
+    <div class="about-content">
+        <div class="about-text">
+            <h1>Nestled in the heart of Baguio City, Burnham Park invites you to immerse yourself in its serene landscapes and vibrant activities, offering a perfect retreat for both relaxation and recreation. From leisurely boat rides on its tranquil lagoon to invigorating strolls amidst lush greenery, I welcome you to experience the tranquility and beauty of Burnham Park.</h1>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>2024 JoVlog All right reserved</p>
+</footer>
+
+</body>
+</html>
